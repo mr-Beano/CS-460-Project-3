@@ -17,7 +17,7 @@ main()
   }
 
   sectors = 0;
-  while(sectors<600){
+  while(sectors<16523){
     *(int*)buf = sectors;
     int cc = write(fd, buf, sizeof(buf));
     if(cc <= 0)
